@@ -1,0 +1,16 @@
+
+src/.actionScriptProperties
+
+src/.project
+
+*.prefs
+
+*.fla
+
+src/MZed Framework Mac-app.xml
+
+src/MZed Framework Mac.swf
+
+src/res/
+
+src/mzed/framework/game/
