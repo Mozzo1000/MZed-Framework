@@ -4,8 +4,12 @@ src/.actionScriptProperties
 src/.project
 
 *.prefs
-
 *.fla
+
+*.bat
+*.as3proj
+*.txt
+*.xml
 
 src/MZed Framework Mac-app.xml
 
@@ -14,3 +18,7 @@ src/MZed Framework Mac.swf
 src/res/
 
 src/mzed/framework/game/
+src/bin/
+src/bat/
+src/AIR_readme
+src/application
