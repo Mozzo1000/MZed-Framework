@@ -1,5 +1,4 @@
 package mzed.framework.input {
-	
 	/**
 	 * ...
 	 * @author Mozzo

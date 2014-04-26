@@ -7,7 +7,7 @@ package mzed.framework {
 	import flash.events.*;
 	import flash.display.StageScaleMode;
 	import flash.display.StageDisplayState;
-	
+
 	/**
 	 * ...
 	 * @author Mozzo

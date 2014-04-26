@@ -22,3 +22,4 @@ src/bin/
 src/bat/
 src/AIR_readme
 src/application
+*.old
