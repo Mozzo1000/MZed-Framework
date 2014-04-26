@@ -14,7 +14,7 @@ package mzed.framework {
 	 * http://www.mozzo.host56.com
 	 */
 	 
-	public class MZ_Game extends Sprite {		
+	public class MZ_Game extends Sprite {
 		internal var _reqState:MZ_State;
 		internal var _reqReset:Boolean;
 		protected var _state:Class;

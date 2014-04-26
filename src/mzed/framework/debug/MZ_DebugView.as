@@ -12,6 +12,7 @@ package mzed.framework.debug {
 	 * @author Mozzo
 	 * http://www.mozzo.host56.com
 	 */
+	 
 	public class MZ_DebugView extends Sprite {		
 		private var perf:MZ_Window;
 		private var fpsText:TextField;

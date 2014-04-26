@@ -29,7 +29,6 @@ package mzed.framework {
 		}
 		
 		public function update():void {
-			//trace("X: " + x + " Y: " + y);
 			if(MZ_Base.debug.visible) {
 				if(MZ_Base.keys.A) {
 					viewX -= 10;
