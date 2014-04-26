@@ -2,3 +2,4 @@
 
 *.gitattributes text
 .gitignore text
+*.as text
