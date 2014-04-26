@@ -17,5 +17,5 @@ Features
 
 License
 -------
-The MZed Framework is is distributed under the [MIT License](http://opensource.org/licenses/MIT).
+The MZed Framework is is distributed under the [MIT License](http://opensource.org/licenses/MIT).  
 Read the LICENSE.md for more details.
