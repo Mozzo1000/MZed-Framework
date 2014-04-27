@@ -1,13 +1,11 @@
 package mzed.framework.render {
+	import flash.display.Sprite;
+	import flash.geom.Rectangle;
 	import mzed.framework.*;
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
-	import flash.display.Sprite;
 	import flash.geom.Point;
-	import flash.geom.Rectangle;
 	import flash.geom.Matrix;
-	import mx.core.BitmapAsset;
-	import mzed.framework.game.*;
 	import mzed.framework.core.MZ_AnimHandler;
 	
 	/**
@@ -118,6 +116,34 @@ package mzed.framework.render {
 		}
 		public function set y(y:Number):void {
 			bit.y = y;
+		}
+		
+		public function collide(object:MZ_Object):void {
+			var _rect1:Rectangle = bit.getBounds(bit);
+			var _rect2:Rectangle = object.bit.getBounds(object.bit);
+			var _offset1:Matrix = bit.transform.matrix;
+			var _offset2:Matrix = object.bit.transform.matrix;
+			
+			var _bitData1:BitmapData = new BitmapData(_rect1.width, _rect1.height, true, 0);
+			var _bitData2:BitmapData = new BitmapData(_rect2.width, _rect2.height, true, 0);
+			
+			var _point1:Point = new Point(_rect1.x, _rect1.y);
+			var _point2:Point = new Point(_rect2.x, _rect2.y);
+			
+			_offset1.tx = bit.x - object.bit.x;
+			_offset1.ty = bit.y - object.bit.y;
+			_offset2.tx = object.bit.x - object.bit.x;
+			_offset2.ty = object.bit.y - object.bit.y;
+			
+			_bitData1.draw(bit, _offset1);
+			_bitData2.draw(object.bit, _offset2);
+			
+			if (_bitData2.hitTest(_point1, 255, _bitData1, _point2, 255)) {
+				trace("Hit!");
+			}
+			
+			_bitData1.dispose();
+			_bitData2.dispose();
 		}
 		
 		public function update():void {

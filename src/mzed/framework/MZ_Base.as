@@ -1,10 +1,8 @@
 package mzed.framework {
+	import flash.display.Stage;
 	import mzed.framework.debug.*;
 	import mzed.framework.render.*;
-	import flash.display.Stage;
 	import mzed.framework.input.*;
-	import flash.display.Bitmap;
-	import flash.display.Sprite;
 	
 	/**
 	 * ...

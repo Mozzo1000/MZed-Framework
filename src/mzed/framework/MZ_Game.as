@@ -1,6 +1,5 @@
 package mzed.framework {
 	import mzed.framework.debug.*;
-	import mzed.framework.game.*;
 	import mzed.framework.render.MZ_Object;
 	import flash.display.Sprite;
 	import flash.ui.Keyboard;
@@ -9,7 +8,8 @@ package mzed.framework {
 	import flash.display.StageDisplayState;
 
 	/**
-	 * ...
+	 * MZ_Game should only be used once to initialize your game
+	 * You shouldn't even bother that this class is here
 	 * @author Mozzo
 	 * http://www.mozzo.host56.com
 	 */
