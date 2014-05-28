@@ -115,7 +115,7 @@ package mzed.framework.render {
 			bit.x += x;
 		}
 		public function set y(y:Number):void {
-			bit.y = y;
+			bit.y += y;
 		}
 		
 		public function collide(object:MZ_Object):void {

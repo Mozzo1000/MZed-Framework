@@ -1,11 +1,9 @@
 package mzed.framework {
 	import mzed.framework.debug.*;
 	import mzed.framework.render.MZ_Object;
-	import flash.display.Sprite;
 	import flash.ui.Keyboard;
 	import flash.events.*;
-	import flash.display.StageScaleMode;
-	import flash.display.StageDisplayState;
+	import flash.display.*;
 
 	/**
 	 * MZ_Game should only be used once to initialize your game
@@ -34,7 +32,9 @@ package mzed.framework {
 			_reqReset = true;
 			MZ_Base.isReqState = _reqReset;
 			
-			stage.scaleMode = StageScaleMode.EXACT_FIT;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align = StageAlign.TOP_LEFT;
+			//stage.scaleMode = StageScaleMode.EXACT_FIT;
 			
 			//After all setup calls for Game
 			create();

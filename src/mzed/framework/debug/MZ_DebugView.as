@@ -36,7 +36,7 @@ package mzed.framework.debug {
 			addChild(perf);
 			
 			fpsText = new TextField();
-			fpsText.defaultTextFormat = MZ_Util.format();
+			fpsText.defaultTextFormat = MZ_Util.format(64);
 			fpsText.text = "FPS: ";
 			perf.addText(fpsText);
 			
