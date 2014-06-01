@@ -23,3 +23,7 @@ src/bat/
 src/AIR_readme
 src/application
 *.old
+
+tests/SimpleGame/.actionScriptProperties
+
+tests/SimpleGame/.project
