@@ -27,3 +27,9 @@ src/application
 tests/SimpleGame/.actionScriptProperties
 
 tests/SimpleGame/.project
+
+*.html
+
+*.air
+
+*.p12
