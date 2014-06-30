@@ -8,7 +8,7 @@ package {
 		
 		public function Player(_x:Number, _y:Number) {
 			super(_x, _y);
-			applyTexture(coin, 32, 32);
+			applyTexture(coin, 16, 16);
 			
 			speed = 4;
 		}
