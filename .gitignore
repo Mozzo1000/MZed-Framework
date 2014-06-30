@@ -1,5 +1,5 @@
 *.bat
-*.txt
 *.as3proj
 *.xml
 *.old
+/tests/SimpleGame/AIR_readme.txt
