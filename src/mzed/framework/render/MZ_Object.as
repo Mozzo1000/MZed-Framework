@@ -71,8 +71,6 @@ package mzed.framework.render {
 			bit.bitmapData.copyPixels(_buffer, _rect, _point);
 			bit.bitmapData.fillRect(_rect, 0);
 			bit.scaleX = bit.scaleY = MZ_Base.camera.zoom;
-			trace("WIDTH: " + width);
-			trace("HEIGHT: " + height);
 		}
 		
 		public function addAnimation(name:String, start:int, end:int, looped:Boolean):void {
