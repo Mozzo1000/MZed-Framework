@@ -35,6 +35,8 @@ package mzed.framework.render {
 		private var _animationName:String;
 		private var _animations:Array;
 		private var _curAnimation:MZ_AnimHandler;
+		private var _previousX:int;
+		private var _previousY:int;
 		
 		private var objClass:MZ_Object;
 		
@@ -109,24 +111,6 @@ package mzed.framework.render {
 			bit.bitmapData.copyPixels(_buffer, _rect, _point);
 		}
 		
-		public function get width():Number {
-			return _width;
-		}
-		
-		public function get height():Number {
-			return _height;
-		}
-		
-		public function set x(x:Number):void {
-			bit.x += x;
-		}
-		public function set y(y:Number):void {
-			bit.y += y;
-		}
-		
-		private var _previousX:int;
-		private var _previousY:int;
-		
 		public function collide(object:MZ_Object):void {
 			var _rect1:Rectangle = bit.getBounds(bit);
 			var _rect2:Rectangle = object.bit.getBounds(object.bit);
@@ -161,12 +145,26 @@ package mzed.framework.render {
 			_bitData2.dispose();
 		}
 		
+		public function get width():Number {
+			return _width;
+		}
+		
+		public function get height():Number {
+			return _height;
+		}
+		
+		public function set x(x:Number):void {
+			bit.x += x;
+		}
+		public function set y(y:Number):void {
+			bit.y += y;
+		}
+		
 		public function update():void {
 			
 		}
 		
 		public function destroy():void {
-			trace("DESTROYED!");
 			bit.bitmapData = null;
 			bit = null;
 			_buffer = null;

@@ -10,9 +10,7 @@ package mzed.framework {
 	 
 	public class MZ_Util {
 		
-		public function MZ_Util() {
-			
-		}
+		public function MZ_Util() { }
 		
 		/**
 		 * Use this with TextField. replaces the use of

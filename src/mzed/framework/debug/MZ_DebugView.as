@@ -32,7 +32,6 @@ package mzed.framework.debug {
 			fpsTime = getTimer();
 			
 			perf = new MZ_Window("Statistics", 100, 120);
-			perf.x = MZ_Base.width - perf.width;
 			addChild(perf);
 			
 			fpsText = new TextField();

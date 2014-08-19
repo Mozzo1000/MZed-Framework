@@ -12,6 +12,7 @@ package mzed.framework {
 		public function create():void {
 			
 		}
+		
 		/**
 		 * Destroy event function
 		 * Override to tap into it
