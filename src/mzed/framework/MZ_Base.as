@@ -5,7 +5,8 @@ package mzed.framework {
 	import mzed.framework.input.*;
 	
 	/**
-	 * ...
+	 * MZ_Base is used to access almost anything
+	 * the framework can do
 	 * @author Mozzo
 	 * http://www.mozzo.host56.com
 	 */
